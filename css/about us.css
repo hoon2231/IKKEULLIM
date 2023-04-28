@@ -1,0 +1,515 @@
+@charset "utf-8";
+
+
+/* fonts
+    노토산스
+    font-family: 'Noto Sans KR', sans-serif;
+    가우디
+    font-family: 'Sorts Mill Goudy', serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+}
+
+body {
+    min-width: 1450px;
+    font-family: 'Noto Sans KR';
+    font-size: 15px;
+    line-height: 25px;
+    color: rgb(35, 30, 30);
+    background-color: #fff;
+}
+
+/*header*/
+#bg {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&1+0,0+100 */
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#00000000', GradientType=0);
+    /* IE6-9 */
+
+    width: 100%;
+    height: 135px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+}
+
+#header {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+#gnb {
+    display: flex;
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 20px;
+}
+
+#gnb li {
+    padding: 0 30px;
+}
+
+#gnb li a:hover {
+    color: rgb(122, 17, 19);
+}
+
+.title {
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 30px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.mbpag span {
+    background-color: #fff;
+}
+
+/* movie */
+
+#moviebg {
+    width: 100%;
+    z-index: 95;
+}
+
+#movie {
+    width: 100%;
+    overflow: hidden;
+    height: 980px;
+    position: relative;
+    text-align: center;
+}
+
+.movie_inner p {
+    padding: 40px 0;
+}
+
+.movie_inner video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.movie_inner img {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 96;
+}
+
+/* 1st */
+
+#one {
+    width: 1220px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;
+    padding-bottom: 150px;
+}
+
+#one ul {
+    width: 1320px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image {
+    width: 500px;
+    height: 600px;
+    position: relative;
+}
+
+.image_one {
+    position: absolute;
+    top: 0;
+    left: 232px;
+}
+
+.image_two {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.image_three {
+    position: absolute;
+    top: 284px;
+    left: 40px;
+}
+
+.one_text {
+    padding-top: 100px;
+    text-align: left;
+}
+
+.one_text h4 {
+    font-size: 24px;
+    padding-bottom: 50px;
+}
+
+.one_text p {
+    font-size: 18px;
+    padding-top: 30px;
+}
+
+.one_text p span {
+    font-weight: bold;
+}
+
+.one_text h5 {
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 50px;
+}
+
+/* ingredient */
+
+#ingredient_bg {
+    background-color: rgb(122, 17, 19);
+    padding: 100px 0;
+}
+
+#ingredient {
+    width: 1320px;
+    background-color: rgb(122, 17, 19);
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+#ingredient h2 {
+    color: #fff;
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+
+#ingredient ul {
+    width: 1320px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+#ingredient ul li p {
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 20px;
+    color: #fff;
+    padding-top: 20px;
+}
+
+#ingredient p {
+    color: #fff;
+    font-size: 18px;
+    padding-top: 50px;
+}
+
+/* concept */
+
+#concept {
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    padding: 100px 0;
+}
+
+#concept h1 {
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 30px;
+}
+
+#concept h3 {
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 25px;
+    font-weight: lighter;
+    padding: 30px 0;
+}
+
+#concept ul {
+    width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    padding-top: 50px;
+}
+
+#concept ul li h2 {
+    padding-bottom: 50px;
+}
+
+#concept ul li p {
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+#concept ul li p span {
+    font-weight: bold;
+}
+
+#concept ul li h4 {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 50px 0;
+}
+
+#concept ul li h5 {
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 20px;
+}
+
+/* logo */
+
+#logo_introduce {
+    width: 100%;
+    height: 878px;
+    background: url(../images/as5.png)no-repeat center;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    align-items: center;
+    color: #fff;
+}
+
+.inner h1 img {
+    width: 70%;
+}
+
+.inner h1 {
+    padding: 50px 0;
+}
+
+.inner h2 {
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 30px;
+}
+
+.inner p {
+    font-size: 18px;
+}
+
+/* symbol */
+
+#symbol {
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    padding: 100px 0;
+}
+
+.symbol_inner h1 {
+    padding: 50px 0;
+}
+
+.symbol_inner h2 {
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 30px;
+}
+
+.symbol_inner p {
+    font-size: 18px;
+}
+
+/* overview */
+
+#overview {
+    background: url(../images/as6.jpg) no-repeat center center fixed;
+}
+
+.overview_inner {
+    margin: 0 auto;
+    width: 1000px;
+    padding: 55px 0;
+}
+
+.overview_text {
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    padding: 20px 0;
+    line-height: 35px;
+}
+
+.overview_text span {
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 25px;
+}
+
+/* color */
+
+#color {
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+#color h2 {
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+
+#color ul {
+    width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+#color h4 {
+    padding: 100px 0;
+}
+
+.box1 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(210, 175, 157);
+    border-radius: 100px;
+}
+
+.box2 {
+    width: 250px;
+    height: 250px;
+    background-color: rgb(122, 17, 19);
+    border-radius: 125px;
+}
+
+.box3 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(175, 49, 82);
+    border-radius: 100px;
+}
+
+.box_inner {
+    padding-top: 50px;
+}
+
+#color ul li h3 {
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 25px;
+    padding-top: 40px;
+    padding-bottom: 15px;
+}
+
+
+#color ul li p {
+    padding-top: 5px;
+}
+
+#color h4 {
+    font-size: 18px;
+}
+
+/* footer */
+
+#footer {
+    background-color: #000;
+}
+
+.footer_inner {
+    width: 600px;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.footer_guide {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.footer_guide li {
+    padding-left: 40px;
+}
+
+.footer_guide li:nth-child(1) {
+    padding-left: 0px;
+}
+
+.footer_logo {
+    padding: 20px;
+    padding-top: 30px;
+}
+
+.footer_logo img {
+    width: 25%;
+}
+
+.sns {
+    margin: 0 auto;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer form {
+    margin: 30px 0;
+}
+
+footer select {
+    outline: none;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-bottom: #fff 1px solid;
+    padding: 10px 15px;
+    width: 250px;
+}
+
+.footer_text {
+    line-height: 30px;
+}
